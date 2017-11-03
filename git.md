@@ -10,8 +10,8 @@
 
 ## reset last commit 
 
-
 [answer form sof](https://stackoverflow.com/questions/927358/how-to-undo-the-last-commits-in-git)
+
 
 ### get list of conflicting files
 `git diff --name-only --diff-filter=U`
@@ -28,3 +28,4 @@ after git pull
 
 ### merge branch without commiting
 git merge branch-name --no-commit --no-ff
+

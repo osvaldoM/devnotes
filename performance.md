@@ -4,6 +4,7 @@
  - first the browser constructs the DOM(Markup)
  - constructs the CSSOM(from CSS rules)
  - generates the Render tree(DOm+CSSOM)
+<<<<<<< HEAD
  - calls the layout process to compute the sizes of each element and the position in pixels
  - calls the paint process that actually draws the nodes.
 
@@ -23,3 +24,6 @@ JS is another obvious render blocking resource, we can stop it from the critical
 
 ### uselful links
 [](http://www.stubbornella.org/content/2009/03/27/reflows-repaints-css-performance-making-your-javascript-slow/)
+=======
+ - 
+>>>>>>> c4a37f55405525a4ba50a2bbe11d9a022cdc815f
