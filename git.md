@@ -19,7 +19,13 @@
 ### get their changes during merge
  `git pull -X theirs`
 
-after git pull 
+### force remote changes into local repo(discard all local commits)
+ _.fetch from the default remote, origin._
+	`git fetch`
+ _.reset your current branch (master) to origin's master._
+         `git reset --hard origin/master`
+
+###after git pull 
 `git checkout --theirs path/to/file`
 
 ### get a single file from git stash
