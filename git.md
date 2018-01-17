@@ -35,3 +35,9 @@
 ### merge branch without commiting
 git merge branch-name --no-commit --no-ff
 
+
+### find parent of branch
+[answer from so](https://stackoverflow.com/a/42562318)
+
+`git show-branch | grep '*' | grep -v "$(git rev-parse --abbrev-ref HEAD)" | head -n1 | sed 's/.*\[\(.*\)\].*/\1/' | sed 's/[\^~].*//'`
+
