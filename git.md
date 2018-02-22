@@ -32,6 +32,14 @@
 
 [answer from sof](https://stackoverflow.com/questions/1105253/how-would-i-extract-a-single-file-or-changes-to-a-file-from-a-git-stash)
 
+### checkout file from branch
+
+`git checkout branch --path`
+
+### show history of file with diff
+
+`git log -p -- path/to/file`
+
 ### merge branch without commiting
 git merge branch-name --no-commit --no-ff
 
@@ -40,4 +48,7 @@ git merge branch-name --no-commit --no-ff
 [answer from so](https://stackoverflow.com/a/42562318)
 
 `git show-branch | grep '*' | grep -v "$(git rev-parse --abbrev-ref HEAD)" | head -n1 | sed 's/.*\[\(.*\)\].*/\1/' | sed 's/[\^~].*//'`
+
+checkout file from branch
+        git checkout <branch_name> -- <paths>
 

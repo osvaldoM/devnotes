@@ -4,3 +4,8 @@ for some reason, when debugging an app, chrome will break on every xhr request e
 `$(window).bind('beforeunload', function(){
     return "Do you want to leave this page?";
 });`
+
+### Insert utility scripts, such as lodash
+This is a deprecated API that has severe impacts on performance, but just for testing, it should be OK 
+`document.write('<' + 'script src="' + script + '"' +
+                   ' type="text/javascript"><' + '/script>');`
