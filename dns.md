@@ -1,13 +1,13 @@
-##registry
+## registry
 organization that manages top level domains like .com, .io or .org
 they also seet rules on domain names such as extensions, registration process and work with registars on selling domain names.
 veriSign is the registry for .com for instance
 
-##registars
+## registars
 organizations like @mozdomains and @iberweb that sell domain names to customers(registrants)
 they are responsable for associating a domain name to a customer and then sending or updating this information to the registry's database.
 
-##registrant
+## registrant
 people who buy a domain name
 
 
