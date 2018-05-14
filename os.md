@@ -20,3 +20,11 @@ then
 `systemctl  restart apache2`
 
  source [https://tecadmin.net/switch-between-multiple-php-version-on-ubuntu/](https://tecadmin.net/switch-between-multiple-php-version-on-ubuntu/)
+
+
+### check for a package dependencies
+    ldd path/to/file
+missing dependencies should have a __not present__ tag appended to them
+
+search for the package using apt-search for instance and install it
+    
