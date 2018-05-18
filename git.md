@@ -8,6 +8,8 @@
 
 [another one](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
 
+[yet, another one](https://github.com/edx/edx-platform/wiki/How-to-Rebase-a-Pull-Request)
+
 ## reset last commit 
 
 [answer form sof](https://stackoverflow.com/questions/927358/how-to-undo-the-last-commits-in-git)
@@ -51,4 +53,9 @@ git merge branch-name --no-commit --no-ff
 
 checkout file from branch
         git checkout <branch_name> -- <paths>
+
+### delete branches already merged into master
+
+        git checkout master
+        git branch --merged | egrep -v "(^\*|master)" | xargs git branch -d 
 

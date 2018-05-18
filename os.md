@@ -28,3 +28,14 @@ missing dependencies should have a __not present__ tag appended to them
 
 search for the package using apt-search for instance and install it
     
+### fix things with shutter
+[https://itsfoss.com/shutter-edit-button-disabled/](https://itsfoss.com/shutter-edit-button-disabled/)
+
+## escape wildcards zsh
+use backslash to escape wildcard
+
+example `sudo apt-get --purge mysql-\*`
+
+## fix annoying vlc: unnable to open the mrl.....
+
+    sudo apt-get install browser-plugin-vlc
