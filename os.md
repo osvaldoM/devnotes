@@ -39,3 +39,26 @@ example `sudo apt-get --purge mysql-\*`
 ## fix annoying vlc: unnable to open the mrl.....
 
     sudo apt-get install browser-plugin-vlc
+    
+    
+### install things from unmantained ubuntu releases
+this is really usefull in situations where an upgrade to a newer version would not be easy to perform( for instance, if you are using a live ubuntu disc)
+
+ - add old servers addresses to sources file
+` 
+deb http://old-releases.ubuntu.com/ubuntu/ zesty main restricted
+deb http://old-releases.ubuntu.com/ubuntu/ zesty-updates main restrictesudo add-apt-repository ppa:yannubuntu/boot-repair[][d
+deb http://old-releases.ubuntu.com/ubuntu/ zesty universe
+deb http://old-releases.ubuntu.com/ubuntu/ zesty-updates universe
+deb http://old-releases.ubuntu.com/ubuntu/ zesty multiverse
+deb http://old-releases.ubuntu.com/ubuntu/ zesty-updates multiverse
+deb http://old-releases.ubuntu.com/ubuntu/ zesty-backports main restricted universe multiverse
+# deb http://security.ubuntu.com/ubuntu zesty-security main restricted
+# deb http://security.ubuntu.com/ubuntu zesty-security universe
+# deb http://security.ubuntu.com/ubuntu zesty-security multiverse
+deb http://archive.canonical.com/ubuntu zesty partner
+`
+Things should work now, to install boot-repair, do as follows :
+- `sudo add-apt-repository ppa:yannubuntu/boot-repair`
+- from software download center , do as described in [this answer](https://askubuntu.com/questions/165255/unable-to-install-boot-repair)
+- force download from unauthenticated sources `sudo apt-get update --allow-unauthenticated`
