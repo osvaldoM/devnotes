@@ -11,6 +11,7 @@ then
 
 `find . -name "*.bak" -type f -delete`
 
+<<<<<<< HEAD
 ### change php version 
 
 ** always make sure to have version 7.* of php installed, otherwise an error will be thrown due to the inexistence of the module **
@@ -62,3 +63,20 @@ Things should work now, to install boot-repair, do as follows :
 - `sudo add-apt-repository ppa:yannubuntu/boot-repair`
 - from software download center , do as described in [this answer](https://askubuntu.com/questions/165255/unable-to-install-boot-repair)
 - force download from unauthenticated sources `sudo apt-get update --allow-unauthenticated`
+=======
+### run script at startup
+
+ edit  `/etc/rc.local` file . in case it doesn't exist, just create one, assign the correct permissions and enable it
+
+    su -
+
+    touch /etc/rc.local
+
+    chmod +x /etc/rc.local
+
+(add whatever you want to your /etc/rc.local file)
+
+    systemctl enable rc-local.service
+
+
+>>>>>>> Update files
