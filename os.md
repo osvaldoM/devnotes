@@ -1,4 +1,4 @@
-[disable annoying unnable to mount device warning](https://askubuntu.com/a/191531)
+[disable automount for media devices](https://askubuntu.com/a/191531)
 
 
 ### delete file based on extension
@@ -11,7 +11,6 @@ then
 
 `find . -name "*.bak" -type f -delete`
 
-<<<<<<< HEAD
 ### change php version 
 
 ** always make sure to have version 7.* of php installed, otherwise an error will be thrown due to the inexistence of the module **
@@ -23,13 +22,13 @@ then
  source [https://tecadmin.net/switch-between-multiple-php-version-on-ubuntu/](https://tecadmin.net/switch-between-multiple-php-version-on-ubuntu/)
 
 
-### check for a package dependencies
+### list a package dependencies
     ldd path/to/file
 missing dependencies should have a __not present__ tag appended to them
 
 search for the package using apt-search for instance and install it
     
-### fix things with shutter
+### add missing deppendencies on ubuntu 18 for shutter
 [https://itsfoss.com/shutter-edit-button-disabled/](https://itsfoss.com/shutter-edit-button-disabled/)
 
 ## escape wildcards zsh
@@ -42,7 +41,7 @@ example `sudo apt-get --purge mysql-\*`
     sudo apt-get install browser-plugin-vlc
     
     
-### install things from unmantained ubuntu releases
+### install packages in unmantained ubuntu 17.04
 this is really usefull in situations where an upgrade to a newer version would not be easy to perform( for instance, if you are using a live ubuntu disc)
 
  - add old servers addresses to sources file
@@ -63,7 +62,7 @@ Things should work now, to install boot-repair, do as follows :
 - `sudo add-apt-repository ppa:yannubuntu/boot-repair`
 - from software download center , do as described in [this answer](https://askubuntu.com/questions/165255/unable-to-install-boot-repair)
 - force download from unauthenticated sources `sudo apt-get update --allow-unauthenticated`
-=======
+
 ### run script at startup
 
  edit  `/etc/rc.local` file . in case it doesn't exist, just create one, assign the correct permissions and enable it
@@ -77,6 +76,3 @@ Things should work now, to install boot-repair, do as follows :
 (add whatever you want to your /etc/rc.local file)
 
     systemctl enable rc-local.service
-
-
->>>>>>> Update files
