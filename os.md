@@ -76,3 +76,7 @@ Things should work now, to install boot-repair, do as follows :
 (add whatever you want to your /etc/rc.local file)
 
     systemctl enable rc-local.service
+    
+    
+### delete image from virtualbox manager
+    VBoxManage unregistervm --delete "<Name of Machine>"
