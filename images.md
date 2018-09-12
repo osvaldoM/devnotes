@@ -2,13 +2,16 @@
 
 Images can be represented in two states:
 
-**raw images**
+**Raw images**
+
 The format of the image when it is taken by a camera. I'm not going into much detail about this, because it's important to be aware of but not of much relevance in the context of the web, but basically it's the format of an unprocessed image.
 
 **Compressed images**
+
 This is how images are mostly presented. PNG,JPEG, GIF, TIFF etc are compressed image formats. after they have been processed
 
-### lossy vs lossless compression
+### Lossy vs lossless compression
+
 Lossy means that after an image is compressed, it looses any attribute that is not considered essential for displaying it.
 Lossless compression in the other hand, means exactly the opposite. Every piece of information that was there before the compression, can be restored when the image is uncompressed
 
@@ -16,10 +19,11 @@ Just because some formats allow lossless compression which is good if you are st
 As a general rule,use well compressed images in production, because it normally makes no sense to have images wasting bandwith with metadata that is not relevant to the experience you deliver to your user
 There are a lot of programs that make good compression on images without negative effects to quality
 
-### png x jpeg x svg x sprites
+### PNG x JPEG x SVG x SPRITES
 
 
 #### jpeg
+
 - Lossy compressed img
 - JPEG is ideal for images with gradients, several different colors and textures( eg. photos of landscapes, pictures, paintings, etc)
 
@@ -27,6 +31,7 @@ There are a lot of programs that make good compression on images without negativ
 - Because of it's algorithm, compressing graphic images with JPEG might make the lines and text in your images blurry. which makes in inadequate for this type of image.
 
 #### png
+
 - PNG is usually better with images rich in text, that have sharp lines with clear separation between areas of flat colors and text (eg. icons, flat logos, graphics, etc)
 - allows transparent backgrounds
 
@@ -56,8 +61,18 @@ Although the reason for using them is pretty solid, I generally refrain from usi
  - if you need to reuse one of the images in the sprite, you need to request the entire sprite
  - because of the above reason, you are prone to have duplicated images and maintaining them becomes a nightmare
  
+ ### More formats
+ #### WebP , JPEGXR
+ The interesting thing about these two formats is that they only work in the browsers that belong to the organizations that created them, and I would only recommend them if you can afford to go the extra mile and cater each browser in a different manner.
+ 
+ WebP is a format created by google that allows 25-34% smaller compressed images compared to PNG and JPEG, while maintaining the same image quality. However, it only works on chrome.
+ 
+ **PS** : you compress can only encode images in either JPEG, PNG or TIFF format into WebP
+ 
+  JPEGXR in the other hand, was created by microsoft and simillarly to WebP, allows better image compression, but it only works fromins IE8+ and ms edge. 
  
  refference 
  - [lossless-and-lossy-compression](https://whatis.techtarget.com/definition/lossless-and-lossy-compression)
  - [jpeg-vs-png](https://thrivethemes.com/jpeg-vs-png/)
  - [raw-vs-jpeg](https://digital-photography-school.com/raw-vs-jpeg/)
+ - [webP](https://developers.google.com/speed/webp/)
