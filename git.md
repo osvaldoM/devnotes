@@ -16,19 +16,22 @@
 
 
 ### get list of conflicting files
-`git diff --name-only --diff-filter=U`
+    git diff --name-only --diff-filter=U
 
 ### get their changes during merge
- `git pull -X theirs`
+     git pull -X theirs
 
 ### force remote changes into local repo(discard all local commits)
- _.fetch from the default remote, origin._
-	`git fetch`
- _.reset your current branch (master) to origin's master._
-         `git reset --hard origin/master`
+ _fetch from the default remote, origin_
+    
+    git fetch
+ _reset your current branch (master) to origin's master_
 
-###after git pull 
-`git checkout --theirs path/to/file`
+    git reset --hard origin/master
+
+### after git pull 
+
+    git checkout --theirs path/to/file
 
 ### get a single file from git stash
 
@@ -36,14 +39,15 @@
 
 ### checkout file from branch
 
-`git checkout branch --path`
+    git checkout branch --path
 
 ### show history of file with diff
 
-`git log -p -- path/to/file`
+    git log -p -- path/to/file
 
 ### merge branch without commiting
-git merge branch-name --no-commit --no-ff
+
+    git merge branch-name --no-commit --no-ff
 
 
 ### find parent of branch
@@ -59,3 +63,5 @@ checkout file from branch
         git checkout master
         git branch --merged | egrep -v "(^\*|master)" | xargs git branch -d 
 
+### Set author of commit
+        git commit --author="John Doe <john@doe.org>"
