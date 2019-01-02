@@ -46,3 +46,13 @@ There is however, another configuration file on git that dictates how git will d
  > Git manages line endings on a per-repository basis by configuring a special .gitattributes file. This file is committed into the repository and overrides an individual's core.autocrlf setting, ensuring consistent behavior for all users, regardless of their Git settings
  
  Because `.gitattributes` has higher priority than .gitignore, you should always pay attention to it.
+ 
+ 
+ 
+ ### Refferences
+- [https://en.wikipedia.org/wiki/Unix2dos](https://en.wikipedia.org/wiki/Unix2dos)
+- [github manual on line endings](https://help.github.com/articles/dealing-with-line-endings/)
+- [https://stackoverflow.com/questions/1552749/difference-between-cr-lf-lf-and-cr-line-break-types](https://stackoverflow.com/questions/1552749/difference-between-cr-lf-lf-and-cr-line-break-types)
+- [https://stackoverflow.com/questions/20496084/git-status-ignore-line-endings-identical-files-windows-linux-environment](https://stackoverflow.com/questions/20496084/git-status-ignore-line-endings-identical-files-windows-linux-environment)
+- 
+- [dos2unix tool](https://waterlan.home.xs4all.nl/dos2unix.html)
