@@ -12,7 +12,7 @@ The transmission details are specified by the(SMTP). When a
 recipient mailbox of a message is not hosted locally(eg. if I'm sending an email from localhost to gmail.com),the message is relayed, that is, forwarded to another MTA(which is going 
 to be mailtrap in our case).
 
-postfix only sends emails but does not store them in a mailbox(AFAIK), so I can't read the. That is why I'm relaying the messages to mailtrap.
+postfix only sends emails but does not store them in a mailbox(AFAIK), so I can't read the emails. That is why I'm relaying the messages to mailtrap.
 In the other hand, mailtrap has a mailserver and "traps" the email for visualization, not attempting to deliver it to the final receipient.
 
 ### Setup postfix
@@ -21,13 +21,14 @@ In the other hand, mailtrap has a mailserver and "traps" the email for visualiza
         sudo service sendmail stop
         
 - install postfix
+
         sudo apt-get install postfix
 
 Configuration for postfix should be prompted automatically, if not, run:
 
         sudo dpkg-reconfigure postfix
         
-During the configuration, the only thing I had to select was to use intermet site as the general configuration as in the following image:
+During the configuration, the only thing I had to select was to use internet site as the general configuration as in the following image:
 
 ![image](https://i.postimg.cc/Wp6mpmqm/Selection-083.png)
 
