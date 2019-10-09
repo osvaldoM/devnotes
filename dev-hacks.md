@@ -20,3 +20,7 @@ list devices
     $ emulator -avd @Nexus_5X_API_26_x86 -writable-system 
     $ adb root
     $ adb remount
+    
+Generate public url for aws S3 file and copy to clipboard
+
+    $ aws s3 presign s3://mybucket/myfile  --expires-in 90000 | clipcopy
