@@ -17,7 +17,7 @@ Lossless compression in the other hand, means exactly the opposite. Every piece 
 
 Just because some formats allow lossless compression which is good if you are still going to edit the image, doesn't mean your final image should have all information in it.
 As a general rule,use well compressed images in production, because it normally makes no sense to have images wasting bandwith with metadata that is not relevant to the experience you deliver to your user
-There are a lot of programs that make good compression on images without negative effects to quality
+There are a lot of programs that make good compression on images without negative effects to quality. I personally recommend [squooapp](https://squoosh.app/) if you want to have an idea of how much you could optimize an image without noticeable loss in quality
 
 ### PNG x JPEG x SVG x SPRITES
 
@@ -40,18 +40,18 @@ There are a lot of programs that make good compression on images without negativ
 
 #### svg
 
-- great if you need to resize your image, while maintaining sharpness, since it's a vector img
+- great if you need to resize your image, while maintaining sharpness, since it's a vector format
 - allows you to manipulate the different shapes within the svg, individually using javascript or css
 
 - only supported from  IE 11+
-- changing colors and other attributes is done by applying properties such as fill to an element within
+- changing colors and other attributes is done by applying properties such as fill to an element within the svg
 - you can only change colors and other visual properties if you load the img in an <svg> | <iframe> | <object> tag . It won't work if you load it within an <img> tag or as a css background image 
 
-### WebP
 
 
 ### gif
 - only supports a a limited set of colors so it might not be a good idea to use it in static images , its the most supported format for animated images
+- Despite the limited set of colours that it supports, gifs are usually larger in size compared to other formats
 
 #### img-sprites
 - great if you need multiple images(specially icons), but want to avoid many round-trips to the server
@@ -63,13 +63,13 @@ Although the reason for using them is pretty solid, I generally refrain from usi
  
  ### More formats
  #### WebP , JPEGXR
- The interesting thing about these two formats is that they only work in the browsers that belong to the organizations that created them, and I would only recommend them if you can afford to go the extra mile and cater each browser in a different manner.
+ The interesting thing about these two formats is that at time of this writing, they only work in the browsers that belong to the organizations that created them, and I would only recommend them if you can afford to go the extra mile and cater each browser in a different manner.
  
  WebP is a format created by google that allows 25-34% smaller compressed images compared to PNG and JPEG, while maintaining the same image quality. However, it only works on chrome.
  
  **PS** : you compress can only encode images in either JPEG, PNG or TIFF format into WebP
  
-  JPEGXR in the other hand, was created by microsoft and simillarly to WebP, allows better image compression, but it only works fromins IE8+ and ms edge. 
+  JPEGXR in the other hand, was created by microsoft and simillarly to WebP, allows better image compression, but it only works from IE8+ and ms edge. 
  
  refference 
  - [lossless-and-lossy-compression](https://whatis.techtarget.com/definition/lossless-and-lossy-compression)
