@@ -1,24 +1,13 @@
-### You might not need service workers
+### You might not need service workers [WIP]
 
-In the past few years, I have been very keen to add improvements related with performance to our website. For a while I just felt that our website could be
-faster, but I didn't really know how to start. I did not know what parts of the software needed improvements. I had heard about
-lighthouse and 
-I have tried to find opportunities for improvements from lighthouse audits but unfortunately all lighthouse provides are metrics
-that are not simple to interpret and translate into numbers that scare the living shit out of the business people.
-Somehow I learned about chrome UX reports and how it provided data about loading experiences collected real world devices
-using the chrome browser. While I couldn't make much sense out of the 
-Today I was s
-
-Don't get me wrong when I say I can't make much sense out of the performance metrics provided by chrome ux reports or 
-by lighthouse. I'm aware of the meaning held by most of the common user metrics such as : time to interactive(TTI), First 
-Contentful Paint(FCP) or First Meaningful Paint(FMP), I have even made a presentation about them in this link. 
+In the past few months, I have been very keen to add improvements related with performance to our website. For a while I just felt that our website could be faster, but I didn't really know where to start and what parts of our website needed improvements. I had heard about lighthouse and I have tried to find opportunities for improvements from lighthouse audits, but unfortunately all lighthouse provided me were metrics that were not simple to interpret and translate into numbers that would scare the living shit out of my managers.
+Don't get me wrong when I say I can't make much sense out of the performance metrics provided by lighthouse. I'm aware of the meaning held by most of the common user metrics such as : time to interactive(TTI), First 
+Contentful Paint(FCP) or First Meaningful Paint(FMP), I have even made a presentation about these metrics [here](https://docs.google.com/presentation/d/1zV2M5aGaQYlPPRaQ97p02x_V7CNmMa6M9qiGsJSf4dI/edit?usp=sharing). 
 My problem with them is that there are so many nuances with them that make it hard to derive accurate or close to accurate
-conclusions out of them. your time to interactive could be low not necessarily because your app makes the browser parse too much
-javascript  and block the main thread, but it could really be because most of your users have really slow devices. your app's FMP 
-could be fast in one region but be really slow in other regions because internet speeds might vary drastically. Bottom
-line is that we can't just assume that one metric is simply low. We need to correlate it with other factors that might contribute to 
-a good/bad experience and still there's no guarantee of certainity.
+conclusions out of them. your time to interactive could be a bad, not necessarily because your app makes the browser run too much syncronous javascript  and block the main thread, but it could really be because most of your users have really slow devices. your app's FMP could be fast in one region but be really slow in other regions because internet speeds might vary drastically. Bottom line is that it's not enough to know that one metric is simply low. We need to correlate it with other factors that might contribute to a good/bad experience and still there's no guarantee of certainity.
 
-Although performance metrics be hard to understand, there's one thing that can easily motivate companies and that's competition.
-I believe that is has already been established that site speed is related to bounce rate and conversion rate and ultimately, 
-to the success of an online business. Business are always trying to get competitive advantage over other businesses, and because of that 
+Although performance metrics might be hard to understand, there's one thing that can easily motivate companies and that's competition.
+I believe that it has already been established that site speed is related to bounce rate and conversion rate and ultimately, 
+to the success of an online business. Business are always trying to get competitive advantage over other businesses, and I think we can leverage that competitivity trait, to justify spending time on performance improvements. With this in mind, I embarqued on a quest to find the best tools that would allow me to get a sense of how "fasr" was our website compared to our competitors.
+Somewhere along the way, I learned about chrome UX reports and how it provided us with data about loading experiences from real world devices using the chrome browser. While I couldn't make much sense out of  Today I was s
+
