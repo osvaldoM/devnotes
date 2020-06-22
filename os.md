@@ -1,5 +1,23 @@
-[disable automount for media devices](https://askubuntu.com/a/191531)
+### Open (safe) windows partition in write mode
 
+- Identifying partition with NTFS file system
+
+      fdisk -l | grep NTFS 
+        
+- You might want to clean the dirty partition using this command
+
+      sudo ntfsfix /dev/sdXY
+    
+- If necessary, unmount the partition
+
+      sudo umount /dev/sdXY
+      
+- Mount the partition again
+
+      sudo mount -o rw /dev/sdXY
+      
+
+[disable automount for media devices](https://askubuntu.com/a/191531)
 
 ### delete file based on extension
 
