@@ -12,10 +12,12 @@
 
       sudo umount /dev/sdXY
       
-- Mount the partition again
+- Mount the partition again with write mode.
 
       sudo mount -o rw /dev/sdXY
       
+Sources: https://askubuntu.com/questions/462381/cant-mount-ntfs-drive-the-disk-contains-an-unclean-file-system
+
 
 [disable automount for media devices](https://askubuntu.com/a/191531)
 
