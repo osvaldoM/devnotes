@@ -29,7 +29,7 @@ Generate public url for aws S3 file and copy to clipboard
 
 [https://www.extendoffice.com/documents/word/1002-word-replace-multiple-files.html]()
 
-Sub CommandButton1_Click()
+`Sub CommandButton1_Click()
 'Updated by Extendoffice 20180625
 Dim xFileDialog As FileDialog, GetStr(1 To 100) As String '100 files is the maximum applying this code
 Dim xFindStr As String
@@ -79,4 +79,5 @@ With xFileDialog
 End With
 MsgBox "Operation end, please view", vbInformation
 End Sub
+`
 
