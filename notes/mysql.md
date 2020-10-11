@@ -20,3 +20,8 @@ Connect to MySQL 5.5
 
 
 Source: [https://www.codementor.io/@arpitbhayani/setup-multiple-mysql-servers-with-different-versions-docker-du107solq](https://www.codementor.io/@arpitbhayani/setup-multiple-mysql-servers-with-different-versions-docker-du107solq)
+
+
+### Full Text Search tutorial
+
+https://www.mysqltutorial.org/mysql-ngram-full-text-parser/
