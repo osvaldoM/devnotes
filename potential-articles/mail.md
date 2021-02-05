@@ -5,18 +5,17 @@ My setup involves two parties:
  - postfix
  - mailtrap
  
-Postfix is a [mail trasnfer agent](https://en.wikipedia.org/wiki/Message_transfer_agent)(mta) that recieves mails
+Postfix is a [mail transfer agent](https://en.wikipedia.org/wiki/Message_transfer_agent)(mta) that recieves mails
 from either another MTA or from a [mail client](https://en.wikipedia.org/wiki/Email_client).
 
-The transmission details are specified by the(SMTP). When a
-recipient mailbox of a message is not hosted locally(eg. if I'm sending an email from localhost to gmail.com),the message is relayed, that is, forwarded to another MTA(which is going 
-to be mailtrap in our case).
+The transmission details are specified by the SMTP protocol. When a
+recipient mailbox of a message is not hosted locally(eg. if I'm sending an email from localhost to gmail.com),the message is relayed, that is, forwarded to another MTA(which is going to be mailtrap in our case).
 
 postfix only sends emails but does not store them in a mailbox(AFAIK), so I can't read the emails. That is why I'm relaying the messages to mailtrap.
-In the other hand, mailtrap has a mailserver and "traps" the email for visualization, not attempting to deliver it to the final receipient.
+Mailtrap in the other hand, has a mailserver and "traps" the email for visualization, not attempting to deliver it to the final receipient.
 
 ### Setup postfix
-- disable whichever mailservice you might have running. eg.
+- disable whatever mailservice you might have running. eg.
 
         sudo service sendmail stop
         
@@ -49,7 +48,7 @@ The rest I left as it was, a sample of my current config is(I hope I didn't expo
         
 ### setup mailtrap
 
-[mailtrap](https://mailtrap.io) which provides a fake smpp server to which you can send emails.
+[mailtrap](https://mailtrap.io) which provides a fake smtp server to which you can send emails.
 mailtrap also offers a web interface that can be used as a mailclient.
 
 To use it, Create an account and use the given setup instructions.\
