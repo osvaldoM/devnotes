@@ -1,7 +1,7 @@
 [disable safe_mode](https://serverpilot.io/community/articles/how-to-disable-strict-mode-in-mysql-5-7.html)
 
 
-### Install different mysql version on local docker container
+### Running different mysql version on the same host using docker container
 
 
 To install Docker on your machine, execute following command on your shell.
