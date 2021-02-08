@@ -1,4 +1,4 @@
-## [WIP]
+# Image formats for the web
 
 Images can be represented in two states:
 

@@ -1,4 +1,4 @@
-## Setup email for development purpose on ubuntu.
+## Setup email client for development purpose on ubuntu.
 
 My setup involves two parties:
 

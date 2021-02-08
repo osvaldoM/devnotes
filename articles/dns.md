@@ -10,8 +10,6 @@ they are responsable for associating a domain name to a customer and then sendin
 ## registrant
 people who buy a domain name
 
-
-
 How it goes
 
  - client makes a request for www.address.com
