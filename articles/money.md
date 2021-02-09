@@ -1,4 +1,10 @@
-# Dealing with currencies
+---
+title: "Dealing with currencies in php"
+published: 2021-02-09
+updated: 2021-02-09
+summary: "One recurring mistake developers make is to perform mathematical operations on currencies using floats(floating point numbers), which might cause rounding errors and other issues."
+tags: [ 'php', 'currencies' ]
+---
 
 ## How we operate with currencies in PHP and what problems does it have?
 

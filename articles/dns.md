@@ -1,3 +1,11 @@
+---
+title: "DNS"
+published: 2021-02-09
+updated: 2021-02-09
+summary: "How DNS works"
+tags: [ 'dns', 'web' ]
+---
+
 ## registry
 organization that manages top level domains like .com, .io or .org
 they also seet rules on domain names such as extensions, registration process and work with registars on selling domain names.
@@ -10,7 +18,7 @@ they are responsable for associating a domain name to a customer and then sendin
 ## registrant
 people who buy a domain name
 
-How it goes
+How it goes:
 
  - client makes a request for www.address.com
 
@@ -19,7 +27,9 @@ How it goes
  - dns server forwards request to nameserver
 
  - nameserver matches domain name with an ip address or another domain name using records
+   
  - ip address is returned
+   
  - user agent makes request to server ip
 
 

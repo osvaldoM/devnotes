@@ -1,4 +1,11 @@
-# Image formats for the web
+---
+title: "Image formats for the web"
+published: 2021-02-09
+updated: 2021-02-09
+summary: "A summary of the different available formats for web applications"
+tags: [ 'web', 'images' ]
+---
+
 
 Images can be represented in two states:
 

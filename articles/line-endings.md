@@ -1,4 +1,10 @@
-# CR, LF, CR LF, WTF?
+---
+title: "CR, LF, CR LF, WTF?"
+published: 2021-02-09
+updated: 2021-02-09
+summary: "Ever get confused when git complains about line endings not being normalized? In this article I explain what are the different types of line endings how to prevent git from making noise about them."
+tags: [ 'os', 'line-endings' ]
+---
 
 __CR__ and __LF__ are control characters, respectively coded 0x0D (13 decimal) and 0x0A (10 decimal)
 
@@ -20,11 +26,13 @@ As time went by, the physical semantics of the symbols were no longer applicable
 Most modern text editors offer options/settings etc. that allow the automatic detection of the file's end-of-line convention and to display it accordingly. In fact every major text editor automatically handles line endigs with the unsurprising exception of microsoft's notepad.
 
 ### How to know what EOL(End Of File) convention a file is using ?
-Run `file akunamatata.txt`
+Run ```bash
+    file akunamatata.txt
+    ```
 For  CRLF the output should be similar to: 
 ![image](https://i.ibb.co/yf6JC0w/Selection-075.png).
 
-### Changinf EOL
+### Changing EOL convention
 Install [dos2unix](https://waterlan.home.xs4all.nl/dos2unix.html), Or using package manager
 
     apt-get install dos2unix
@@ -56,3 +64,4 @@ There is however, another configuration file on git that dictates how git will d
 - [https://stackoverflow.com/questions/20496084/git-status-ignore-line-endings-identical-files-windows-linux-environment](https://stackoverflow.com/questions/20496084/git-status-ignore-line-endings-identical-files-windows-linux-environment)
 - 
 - [dos2unix tool](https://waterlan.home.xs4all.nl/dos2unix.html)
+  https://luispuerto.net/blog/2020/01/04/normalize-line-endings-files-git/
