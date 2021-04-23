@@ -1,6 +1,6 @@
 ---
 title: "Sending test emails on ubuntu"
-published: 2021-02-09
+published: 2019-01-19
 updated: 2021-02-09
 summary: "A brief explanation of how email is sent to a recipient and what's my current setup for sending emails in my development environment"
 tags: [ 'email', 'mailtrap' ]

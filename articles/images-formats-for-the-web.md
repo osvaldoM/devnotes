@@ -1,6 +1,6 @@
 ---
 title: "Image formats for the web"
-published: 2021-02-09
+published: 2018-01-22
 updated: 2021-02-09
 summary: "A summary of the different available formats for web applications"
 tags: [ 'web', 'images' ]

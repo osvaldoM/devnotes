@@ -1,9 +1,9 @@
 ---
 title: "CR, LF, CR LF, WTF?"
-published: 2021-02-09
+published: 2018-12-20
 updated: 2021-02-09
 summary: "Ever get confused when git complains about line endings not being normalized? In this article I explain what are the different types of line endings how to prevent git from making noise about them."
-tags: [ 'os', 'line-endings' ]
+tags: [ 'os', 'git' ]
 ---
 
 __CR__ and __LF__ are control characters, respectively coded 0x0D (13 decimal) and 0x0A (10 decimal). They are used to mark a line break in a text file. 
