@@ -89,7 +89,7 @@ export default {
 
 ```
 
-Looking at the `NoteListItem.vue` component,  we can notice two things:
+Looking at the `NoteListItem.vue` component,  we can notice a few things:
 
 - It doesn't have any internal observable properties 
   
@@ -97,7 +97,7 @@ Looking at the `NoteListItem.vue` component,  we can notice two things:
 
 - It has no lifecycle methods 
 
-`NoteListItem.vue` has a very simple job, render a list item that it receives from it's parent, so we can tell Vue to optimize its rendering performance.
+`NoteListItem.vue` has a very simple job, render a list item that it receives from its parent, so, we can tell Vue to optimize its rendering performance.
 
 Components within a `v-for` loop are usually great candidates for becoming functional.
 
@@ -106,7 +106,7 @@ Components within a `v-for` loop are usually great candidates for becoming funct
 In order to make a component functional, a few changes have to be made to the `NoteListItem.vue` component. The `NoteList` component remains unchanged.
 
  - First, if we are using Single File Components we add the `functional` keyword in the template declaration 
- - Afterwords, props are accessed through a `props` object that contains the provided props. 
+ - Afterwards, props are accessed through a `props` object that contains the provided props. 
 
 NoteListItem.vue
 
