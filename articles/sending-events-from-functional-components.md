@@ -159,7 +159,7 @@ export default {
 ### Interesting caveats
   
 - Like in normal components, we can pass in $event as an argument to the handler.
-- We can get rid of the <script> section, since the props property is optional and is used only for validation.
+- We can get rid of the `<script>` section, since the props property is optional and is used only for validation.
 
 
 The final code for this component can be seen in this [code sandbox project](https://codesandbox.io/s/lucid-brown-rf6t9)
