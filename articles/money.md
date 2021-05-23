@@ -8,13 +8,13 @@ tags: [ 'php' ]
 
 ## How we operate with currencies in PHP and what problems does it have?
 
-One recurring mistake developers make is to perform mathematical operations on currencies, using floats(floating point numbers),
-which might cause rounding errors and other issues due to how floats are represented in computer hardware. A good explanation for this, can be found in this [article](https://docs.python.org/release/2.5.1/tut/node16.html).
+One common mistake developers make is to perform mathematical operations on currencies, using floats(floating point numbers),
+which might cause rounding errors and cause people to have a stroke once they learn that the result `(0.1 + 0.1 - 0.2) === 0;` is `false` due to how floats are represented in computer hardware. A good explanation for this, can be found in this [article](https://docs.python.org/release/2.5.1/tut/node16.html).
 
-One common approach to working with currencies is to use Martin Fowler's money pattern which in summary means:
+One common approach to working with currencies in PHP is to use Martin Fowler's money pattern which in summary means:
 - Deal in the currencies smallest unit (for dollars that's cents, but don't assume all currencies have the same smallest unit).
 - Store amounts as strings (for some cases, integers can be used)
-- Perform all arithmetic operations using the BC or GMP extensions. For this example I used BCMath
+- Perform all arithmetic operations using the BC or GMP extensions that use [decimal floats instead of binary floats](https://docs.python.org/3/library/decimal.html). For this example I used BCMath
 
 This approach is valid for cryptocurrencies as well, but we have to define a base fractional unit for the specific cryptocurrency we want to work with.
 
@@ -211,14 +211,9 @@ class product extends TestCase
 
 ```
 
-
-
-## What is the best way to store them in the Database?
-
-I believe that the best way for storing currencies in the database whenever possible would be to store the value as a decimal/numeric data type in one column and store the currency in a separate column (either a Foreign Key or an ISO currency code). Decimal/numeric data types have enough precision to support most common operations on currencies without losing accuracy.
-
-Alternatively, they could be stored as strings(eg: 250 USD) but this could make arithmetic database operations more difficult, which would also make reporting/analytics for instance, more complicated.
-
+I wrote this class for learning purposes but to handle most real-world scenarios, I would have to add support
+for things like input validation, money allocation, working with multiple currencies(eg: 25USD + 20EUR) and other things I cannot foresee at the moment.
+In real-world scenarios I usually rely on a library called [moneyphp](https://github.com/moneyphp/money) that handles most of the low-level aspects of money calculations.
 
 
 ## Articles about Martin Fowler's pattern:
