@@ -100,3 +100,6 @@ Things should work now, to install boot-repair, do as follows :
     
 ### delete image from virtualbox manager
     VBoxManage unregistervm --delete "<Name of Machine>"
+
+### Kill process running on port
+    kill -9 $(lsof -t -i:8080)
